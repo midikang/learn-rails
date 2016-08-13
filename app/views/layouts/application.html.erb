@@ -18,41 +18,50 @@
        <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
-<hr>
-<h2>Small Grid</h2>
-<div class="row">
-  <div class="small-2 columns">2 columns<button class="large alert button">Order Now</button></div>
-  <div class="small-10 columns">10 columns<button class="large alert button">Order Now</button></div>
-</div>
-<div class="row">
-  <div class="small-3 columns">3 columns<button class="large alert button">Order Now</button></div>
-  <div class="small-9 columns">9 columns<button class="large alert button">Order Now</button></div>
-</div>
-<hr>
-<h2>Medium Grid</h2>
-<div class="row">
-  <div class="medium-2 columns">2 columns<button class="large alert button">Order Now</button></div>
-  <div class="medium-10 columns">10 columns<button class="large alert button">Order Now</button></div>
-</div>
-<div class="row">
-  <div class="medium-3 columns">3 columns<button class="large alert button">Order Now</button></div>
-  <div class="medium-9 columns">9 columns<button class="large alert button">Order Now</button></div>
-</div>
-<hr>
-<h2>Advanced</h2>
-<div class="row">
-  <div class="small-8 columns">8
+    <hr>
+    <h2>Small Grid</h2>
     <div class="row">
-      <div class="small-8 columns">8 Nested
+      <div class="small-2 columns">2 columns<button class="large alert button">Order Now</button></div>
+      <div class="small-10 columns">10 columns<button class="large alert button">Order Now</button></div>
+    </div>
+    <div class="row">
+      <div class="small-3 columns">3 columns<button class="large alert button">Order Now</button></div>
+      <div class="small-9 columns">9 columns<button class="large alert button">Order Now</button></div>
+    </div>
+    <hr>
+    <h2>Medium Grid</h2>
+    <div class="row">
+      <div class="medium-2 columns">2 columns<button class="large alert button">Order Now</button></div>
+      <div class="medium-10 columns">10 columns<button class="large alert button">Order Now</button></div>
+    </div>
+    <div class="row">
+      <div class="medium-3 columns">3 columns<button class="large alert button">Order Now</button></div>
+      <div class="medium-9 columns">9 columns<button class="large alert button">Order Now</button></div>
+    </div>
+    <hr>
+    <h2>Advanced</h2>
+    <div class="row">
+      <div class="small-8 columns">8
         <div class="row">
-          <div class="small-8 columns">8 Nested Again</div>
+          <div class="small-8 columns">8 Nested
+            <div class="row">
+              <div class="small-8 columns">8 Nested Again</div>
+              <div class="small-4 columns">4</div>
+            </div>
+          </div>
           <div class="small-4 columns">4</div>
         </div>
       </div>
       <div class="small-4 columns">4</div>
     </div>
-  </div>
-  <div class="small-4 columns">4</div>
-</div>
+
+    <footer class="row">
+      <section class="small-12 medium-4 columns">
+      Copyright 2016
+      </section>
+      <section class="small-12 medium-8 columns">
+      All rights reserved.
+      </section>
+    </footer>
   </body>
 </html>

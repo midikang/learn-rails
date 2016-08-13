@@ -38,3 +38,8 @@ Running via Spring preloader in process 4405
        force  app/views/layouts/_messages.html.erb
        force  app/views/layouts/_navigation.html.erb
    identical  app/views/layouts/_navigation_links.html.erb
+
+Run the generator to install SimpleForm with a Zurb Foundation option:
+```
+rails generate simple_form:install --foundation
+```
