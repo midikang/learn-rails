@@ -43,3 +43,10 @@ Run the generator to install SimpleForm with a Zurb Foundation option:
 ```
 rails generate simple_form:install --foundation
 ```
+
+## high_voltage gem
+rake routes
+Prefix Verb URI Pattern Controller#Action
+  root GET  /           visitors#new
+  page GET  /pages/*id  high_voltage/pages#show
+
