@@ -1,0 +1,54 @@
+// by giving it a name beginning with “1” it
+// will load before any other stylesheet files we may add later. The asset pipeline
+// loads files in alphabetical order. We want the Foundation framework to load
+// before any custom CSS files.
+// import the CSS framework
+
+// directive will import the Foundation CSS rules from the Foundation gem.
+@import "foundation";
+
+// override for the 'Home' navigation link
+.top-bar .name {
+  font-size: rem-calc(13);
+  line-height: 45px; }
+.top-bar .name a {
+  font-weight: normal;
+  color: white;
+  padding: 0 15px; }
+
+// THESE ARE EXAMPLES YOU CAN MODIFY
+// create mixins using Foundation classes
+@mixin twelve-columns {
+  @extend .small-12;
+  @extend .columns;
+  }
+@mixin six-columns-centered {
+  @extend .small-6;
+  @extend .columns;
+  @extend .text-center;
+  }
+// create your own classes
+// to make views framework-neutral
+.column {
+  @include six-columns-centered;
+  }
+.form {
+  @include grid-column(6);
+  }
+.form-centered {
+  @include six-columns-centered;
+  }
+.submit {
+  @extend .button;
+  @extend .radius;
+  }
+// apply styles to HTML elements
+// to make views framework-neutral
+main {
+  @include twelve-columns;
+  background-color: #eee;
+  }
+section {
+  @extend .row;
+  margin-top: 20px;
+  }

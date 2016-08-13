@@ -5,6 +5,8 @@
     <title><%= content_for?(:title) ? yield(:title) : "Learn Rails" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Learn Rails" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%# Modernizr is required for Zurb Foundation %>
+    <%= javascript_include_tag 'vendor/modernizr' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
@@ -13,8 +15,44 @@
       <%= render 'layouts/navigation' %>
     </header>
     <main role="main">
-      <%= render 'layouts/messages' %>
-      <%= yield %>
+       <%= render 'layouts/messages' %>
+       <%= yield %>
     </main>
+<hr>
+<h2>Small Grid</h2>
+<div class="row">
+  <div class="small-2 columns">2 columns<button class="large alert button">Order Now</button></div>
+  <div class="small-10 columns">10 columns<button class="large alert button">Order Now</button></div>
+</div>
+<div class="row">
+  <div class="small-3 columns">3 columns<button class="large alert button">Order Now</button></div>
+  <div class="small-9 columns">9 columns<button class="large alert button">Order Now</button></div>
+</div>
+<hr>
+<h2>Medium Grid</h2>
+<div class="row">
+  <div class="medium-2 columns">2 columns<button class="large alert button">Order Now</button></div>
+  <div class="medium-10 columns">10 columns<button class="large alert button">Order Now</button></div>
+</div>
+<div class="row">
+  <div class="medium-3 columns">3 columns<button class="large alert button">Order Now</button></div>
+  <div class="medium-9 columns">9 columns<button class="large alert button">Order Now</button></div>
+</div>
+<hr>
+<h2>Advanced</h2>
+<div class="row">
+  <div class="small-8 columns">8
+    <div class="row">
+      <div class="small-8 columns">8 Nested
+        <div class="row">
+          <div class="small-8 columns">8 Nested Again</div>
+          <div class="small-4 columns">4</div>
+        </div>
+      </div>
+      <div class="small-4 columns">4</div>
+    </div>
+  </div>
+  <div class="small-4 columns">4</div>
+</div>
   </body>
 </html>
